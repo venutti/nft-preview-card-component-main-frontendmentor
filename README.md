@@ -29,8 +29,8 @@ Los usuarios deberían poder:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/venutti/nft-preview-card-component-main-frontendmentor)
-- Live Site URL: [GitHub Pages](https://your-live-site-url.com)
+- [GitHub](https://github.com/venutti/nft-preview-card-component-main-frontendmentor)
+- [GitHub Pages](https://venutti.github.io/nft-preview-card-component-main-frontendmentor/)
 
 ## Mi proceso
 
