@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --SOFT-BLUE: hsl(215, 51%, 70%);
+    --CYAN: hsl(178, 100%, 50%);
+    --DARK-BLUE-1: hsl(217, 54%, 11%);
+    /*main bg*/
+    --DARK-BLUE-2: hsl(216, 50%, 16%);
+    --DARK-BLUE-2-SHADOW: hsl(216, 50%, 10%);
+    /*card bg*/
+    --DARK-BLUE-3: hsl(215, 32%, 27%);
+    /*line*/
+    --WHITE: hsl(0, 0%, 100%);
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+/*
+### Body Copy
+- Font size (paragraph): 18px
+### Font
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+font-family: 'Outfit', sans-serif;
+- Weights: 300, 400, 600
+*/
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--DARK-BLUE-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.card {
+    margin: 2rem auto;
+    background-color: var(--DARK-BLUE-2);
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px var(--DARK-BLUE-2-SHADOW);
+    padding: 20px;
+    color: var(--SOFT-BLUE);
+}
+.card .img {
+    position: relative;
+    cursor: pointer;
+}
+.card .img img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.card .img .eye {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--CYAN);
+    top: 0;
+    border-radius: 5px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card .img .eye:hover {
+    opacity: .5;
+}
+.card h2 {
+    color: var(--WHITE);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.card p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.card .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.card .info .price {
+    font-weight: 400;
+    color: var(--CYAN);
+}
+
+.card .info .price::before {
+    content: url("./images/icon-ethereum.svg");
+    margin-right: 5px;
+    /*adjust lining*/
+    position: relative;
+    bottom: -2px;
+}
+
+.card .info .time-left::before {
+    content: url("./images/icon-clock.svg");
+    margin-right: 5px;
+    /*adjust lining*/
+    position: relative;
+    bottom: -2px;
+}
+
+.card hr {
+    color: var(--DARK-BLUE-3);
+}
+
+.card .creator {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.card .creator img {
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid var(--WHITE);
+    margin-right: 20px;
+}
+
+.card .creator span {
+    color: var(--WHITE);
+    display: inline-block;
+    cursor: pointer;
+}
+
+.card h2:hover,
+.card .creator span:hover {
+    color: var(--CYAN);
+}
